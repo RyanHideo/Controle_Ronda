@@ -20,7 +20,7 @@ public class LeituraController {
     }
 
     @PostMapping
-    public ResponseEntity<?> createLeitura(@RequestBody LeituraRequestDTO leituraRequestDTO) {
+    public ResponseEntity<Leituras> createLeitura(@RequestBody LeituraRequestDTO leituraRequestDTO) {
 
         Leituras savedLeituras = leituraService.registrarLeitura(leituraRequestDTO);
 
